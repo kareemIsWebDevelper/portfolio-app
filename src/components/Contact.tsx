@@ -80,8 +80,14 @@ const Contact: React.FC = () => {
     setFormState(prev => ({ ...prev, isSubmitting: true, errors: {} }));
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Send email using mailto
+      const subject = encodeURIComponent(formState.data.subject);
+      const body = encodeURIComponent(
+        `Name: ${formState.data.name}\nEmail: ${formState.data.email}\n\nMessage:\n${formState.data.message}`
+      );
+      const mailtoLink = `mailto:karimkhibrahim@gmail.com?subject=${subject}&body=${body}`;
+      
+      window.location.href = mailtoLink;
       
       console.log('Form submitted:', formState.data);
       

@@ -12,26 +12,28 @@ import {
   MapPin, 
   Github, 
   Linkedin, 
-  Twitter,
   Code2,
   Palette,
-  Wrench
+  Wrench,
+  Facebook
 } from 'lucide-react';
+
+export const socialLinks: readonly SocialLink[] = [
+  { icon: Github, href: 'https://github.com/kareemIsWebDevelper', variant: 'default', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/kareem-khaled-6a10a2263/', variant: 'primary', label: 'LinkedIn' },
+  { icon: Facebook, href: 'https://www.facebook.com/kareemkhaled.fullstack/', variant: 'secondary', label: 'Facebook' }
+] as const;
 
 export const personalInfo: PersonalInfo = {
   name: 'Kareem Khaled',
   title: 'Frontend Engineer',
-  email: 'alex.morgan@email.com',
-  phone: '+1 (555) 123-4567',
-  location: 'San Francisco, CA',
+  email: 'karimkhibrahim@email.com',
+  phone: '+2001098765897',
+  location: 'Cairo, Egypt',
   bio: 'Passionate frontend engineer with a keen eye for design and a love for creating seamless user experiences that make a difference.',
   avatar: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=800',
   resumeUrl: '#',
-  socialLinks: [
-    { icon: Github, href: '#', variant: 'default', label: 'GitHub' },
-    { icon: Linkedin, href: '#', variant: 'primary', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', variant: 'secondary', label: 'Twitter' }
-  ] as SocialLink[],
+  socialLinks: socialLinks as SocialLink[],
 } as const;
 
 export const contactInfo: readonly ContactInfoType[] = [
