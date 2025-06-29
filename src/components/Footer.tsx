@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="mb-8 group">
             <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
-              Alex Morgan
+              Kareem Khaled
             </h3>
             <p className="text-slate-400 dark:text-slate-500 text-lg">Frontend Engineer</p>
             <div className="flex items-center justify-center gap-2 mt-2">
@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="pt-6 border-t border-slate-700/50 dark:border-slate-800/50">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <p className="text-slate-400 dark:text-slate-500 text-sm">
-                © {new Date().getFullYear()} Alex Morgan. All rights reserved.
+                © {new Date().getFullYear()} Kareem Khaled. All rights reserved.
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-400 dark:text-slate-500">
                 <a href="#" className="hover:text-white dark:hover:text-slate-300 transition-colors duration-300 hover:underline">

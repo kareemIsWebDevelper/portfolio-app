@@ -43,7 +43,7 @@ const Hero = () => {
               Hi, I'm{' '}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent animate-pulse">
-                  Alex Morgan
+                  Kareem Khaled
                 </span>
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-lg animate-pulse"></div>
               </span>

@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 
 export const personalInfo: PersonalInfo = {
-  name: 'Alex Morgan',
+  name: 'Kareem Khaled',
   title: 'Frontend Engineer',
   email: 'alex.morgan@email.com',
   phone: '+1 (555) 123-4567',
