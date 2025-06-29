@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Calendar, MapPin, Briefcase, TrendingUp } from 'lucide-react';
 
 const Experience = () => {
@@ -9,7 +9,7 @@ const Experience = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry && entry.isIntersecting) {
           setIsVisible(true);
         }
       },

@@ -87,7 +87,7 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             {[
-              { number: '5+', label: 'Years Experience' },
+              { number: '3+', label: 'Years Experience' },
               { number: '50+', label: 'Projects Completed' },
               { number: '15+', label: 'Happy Clients' }
             ].map((stat, index) => (
