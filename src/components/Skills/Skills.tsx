@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Star } from 'lucide-react';
-import { SectionHeader, AnimatedSection, SkillCard, Badge } from './ui';
-import { skillCategories, topTechnologies } from '../data/portfolio';
+import React, { useEffect, useState } from "react";
+import { Star } from "lucide-react";
+import { SectionHeader, AnimatedSection, Badge } from "../ui";
+import { skillCategories, topTechnologies } from "../../data/portfolio";
+import SkillCard from "./SkillCard";
 
 const Skills: React.FC = () => {
   const [animatedSkills, setAnimatedSkills] = useState<Set<number>>(new Set());
@@ -10,10 +11,11 @@ const Skills: React.FC = () => {
     // Animate skills progressively
     const timer = setTimeout(() => {
       const interval = setInterval(() => {
-        setAnimatedSkills(prev => {
+        setAnimatedSkills((prev) => {
           const newSet = new Set(prev);
           newSet.add(newSet.size);
-          if (newSet.size >= 18) { // Total number of skills
+          if (newSet.size >= 18) {
+            // Total number of skills
             clearInterval(interval);
           }
           return newSet;
@@ -25,11 +27,17 @@ const Skills: React.FC = () => {
   }, []);
 
   return (
-    <section id="skills" className="py-20 bg-slate-50 dark:bg-slate-800 relative overflow-hidden transition-colors duration-300">
+    <section
+      id="skills"
+      className="py-20 bg-slate-50 dark:bg-slate-800 relative overflow-hidden transition-colors duration-300"
+    >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/10 to-purple-400/10 dark:from-blue-400/5 dark:to-purple-400/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-green-400/10 to-blue-400/10 dark:from-green-400/5 dark:to-blue-400/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-green-400/10 to-blue-400/10 dark:from-green-400/5 dark:to-blue-400/5 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -113,7 +113,7 @@ export interface ThemeContextType {
 export type AnimationType = 'fade-up' | 'fade-in' | 'slide-left' | 'slide-right' | 'scale';
 
 // UI Component types
-export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'default';
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'default' | 'outline';
 export type ButtonSize = 'sm' | 'md' | 'lg';
 export type BadgeVariant = 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error';
 export type BadgeSize = 'sm' | 'md' | 'lg';

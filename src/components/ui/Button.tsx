@@ -30,7 +30,8 @@ const Button: React.FC<ButtonProps> = ({
     primary: 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 hover:shadow-2xl focus:ring-blue-500/20',
     secondary: 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 hover:shadow-xl focus:ring-slate-500/20',
     outline: 'border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-400 dark:hover:border-slate-500 hover:shadow-xl focus:ring-slate-500/20',
-    ghost: 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 focus:ring-slate-500/20'
+    ghost: 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 focus:ring-slate-500/20',
+    default: 'bg-white dark:bg-slate-900 text-slate-700 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 hover:shadow-lg focus:ring-slate-500/20'
   } as const;
   
   const sizeClasses: Record<ButtonSize, string> = {

@@ -9,6 +9,7 @@ interface CardProps {
   readonly variant?: CardVariant;
   readonly onMouseEnter?: () => void;
   readonly onMouseLeave?: () => void;
+  readonly style?: React.CSSProperties;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -18,7 +19,8 @@ const Card: React.FC<CardProps> = ({
   padding = 'md',
   variant = 'default',
   onMouseEnter,
-  onMouseLeave
+  onMouseLeave,
+  style = {},
 }) => {
   const baseClasses = 'rounded-3xl transition-all duration-500 border' as const;
   
@@ -46,6 +48,7 @@ const Card: React.FC<CardProps> = ({
       className={classes}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      style={style}
     >
       {children}
     </div>

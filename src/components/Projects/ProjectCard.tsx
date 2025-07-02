@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Star, Eye } from 'lucide-react';
-import Card from './Card';
-import Badge from './Badge';
-import IconButton from './IconButton';
-import Button from './Button';
+import Card from '../ui/Card';
+import Badge from '../ui/Badge';
+import IconButton from '../ui/IconButton';
+import Button from '../ui/Button';
 import type { Project } from '../../types';
 
 interface ProjectCardProps extends Project {
@@ -35,6 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="group overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        style={{ animationDelay: `${delay}ms` }}
       >
         <div className="relative overflow-hidden">
           <img

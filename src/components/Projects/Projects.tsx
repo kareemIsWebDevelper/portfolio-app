@@ -1,7 +1,8 @@
 import React from 'react';
 import { Star } from 'lucide-react';
-import { SectionHeader, AnimatedSection, ProjectCard, Badge } from './ui';
-import { topTechnologies, getFeaturedProjects, getOtherProjects } from '../data/portfolio';
+import { SectionHeader, AnimatedSection, Badge } from '../ui';
+import { topTechnologies, getFeaturedProjects, getOtherProjects } from '../../data/portfolio';
+import ProjectCard from './ProjectCard';
 
 const Projects: React.FC = () => {
   const featuredProjects = getFeaturedProjects();

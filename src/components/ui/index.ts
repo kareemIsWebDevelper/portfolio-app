@@ -9,5 +9,3 @@ export { default as IconButton } from './IconButton';
 export { default as SectionHeader } from './SectionHeader';
 export { default as AnimatedSection } from './AnimatedSection';
 export { default as ContactInfo } from './ContactInfo';
-export { default as ProjectCard } from './ProjectCard';
-export { default as SkillCard } from './SkillCard';
