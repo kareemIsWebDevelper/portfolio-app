@@ -75,7 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <IconButton
               icon={Github}
               variant="secondary"
-              className="bg-slate-800/90 dark:bg-slate-700/90 backdrop-blur-sm text-white hover:bg-slate-900 dark:hover:bg-slate-600"
+              className="bg-slate-800/90 dark:bg-slate-700/90 backdrop-blur-sm text-black hover:text-white hover:bg-slate-900 dark:hover:bg-slate-60 ms-2"
               onClick={() => handleExternalLink(githubUrl)}
             />
           </div>
